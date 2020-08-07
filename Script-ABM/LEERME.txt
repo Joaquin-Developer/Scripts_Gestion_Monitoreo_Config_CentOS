@@ -1,0 +1,12 @@
+========================================
+    Scripts de ABM Usuarios y Grupos    
+     ACLARACIÓNES ACERCA DEL SCRIPT  
+========================================
+
+Principal.sh = Script principal, que contiene un menú del cual se llaman a los
+demás scripts (Gestion_Grupos.sh y Gestion_Usuarios.sh)
+
+Deberá ejecutarse inicialmente dicho script (Principal.sh)
+
+=======================================
+Equipo Tech-Vibe

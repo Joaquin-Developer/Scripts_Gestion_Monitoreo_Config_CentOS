@@ -1,0 +1,14 @@
+================================================
+    Scripts de respaldos
+================================================
+
+Con este script podremos realizar los backups de
+la base de datos MySQL y todo el contenido de 
+la carpeta /home (carpeta con datos de usuarios)
+
+El mismo se puede acceder desde el menu
+prinipal del script del Operador de 
+centro de computos
+
+=======================================
+Equipo Tech-Vibe.
