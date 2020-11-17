@@ -10,3 +10,4 @@
 - Monitorear conexion a internet
 - Ver registro de LOGS del Sistema (Logs correctos, fallidos, útimo log, logueados actualmente)
 
+Script Principal: `./centro-de-computos.sh`
