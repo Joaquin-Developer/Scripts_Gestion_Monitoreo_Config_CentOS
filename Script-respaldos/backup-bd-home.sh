@@ -16,7 +16,7 @@ function respaldarBD(){
 	read -p "¿Desea exportar el respaldo de la base de datos? (si / no) " opcion
 	case "$opcion" in
 		"si"|"SI")
-			# scp ...
+			scp $rutaRespaldo usuario1@192.168.1.11:/home/usuario1
 			
 			;;
 	

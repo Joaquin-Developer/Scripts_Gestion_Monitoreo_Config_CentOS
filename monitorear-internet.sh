@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-echo "Probando conexion a internet. Realizando ping a 8.8.8.8  . . ."
+echo "Probando conexion a internet. Realizando ping a Google  . . ."
 
 # hago un ping y guardo la linea de info de % paquetes perdidos en variable :
 linea=$(ping -c4 8.8.8.8 | grep "loss")

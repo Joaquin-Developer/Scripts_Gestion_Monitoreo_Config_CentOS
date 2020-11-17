@@ -18,8 +18,10 @@ do
 	echo "| (3) - Ver registro de logs                   |"
 	echo "| (4) - Monitorear conexion a internet         |"
 	echo "| (5) - Monitorear estado de MySQL             |"
-	echo "| (6) - Activar/Desactivar servicio SSH        |"
-	echo "| (7) - Bloquear acceso de IP                  |"
+	echo "| (6) - Monitorear procesos con HTOP           |"
+	echo "| (7) - Activar/Desactivar servicio SSH        |"
+	echo "| (8) - Bloquear acceso de IP (Firewall)       |"
+	echo "| (9) - Instalar/Desinstalar MariaDB           |"
 	echo "| (0) - Salir                                  |"
 	echo "+----------------------------------------------+"
 	echo ""; read -p "Su opcion: " opcion
@@ -48,11 +50,15 @@ do
 		5)
 			./monitorear-mysql.sh
 			;;
-
 		6)
+			# monitorear procesos
+			htop;
+			;;
+
+		7)
 			./activar-sshd.sh
 			;;
-		7)
+		8)
 			# bloquear acceso a un ip con iptables
 			echo "Ejemplo de IP valida: 255.255.255.255"
 			ip=""
@@ -64,6 +70,10 @@ do
 			#./funcionValida.sh $n1 $n2 $n3 $n4
 			./bloquear-acceso-ip.sh $n1 $n2 $n3 $n4
 			;;
+		9)
+			./instalar-desinstalar-mariadb.sh
+			;;
+
 		0)	
 			echo "¡Hasta pronto!"
 			sleep 2
